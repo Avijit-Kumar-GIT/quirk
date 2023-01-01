@@ -1,0 +1,16 @@
+<nav class="navbar justify-content-between">
+    <div class="d-flex">
+      <a class="navbar-brand mt-5" href="/"><h1><b>Quirk</b></h1></a>
+      <div class="mt-5 navbar-nav">
+      {% if session %}
+      <div class="d-flex">
+        <a href="{{url_for('dashboard')}}" class="nav-item nav-link">Dashboard</a>
+        <a href="{{url_for('logout')}}" class="btn btn-primary nav-item">Logout</a>
+        <!-- <div><pre>{{pretty}}</pre></div> -->
+      </div>
+      {% else %}
+        <a href="{{url_for('login')}}" class="btn btn-primary nav-item">Login</a>
+      {% endif %}
+      </div>
+    </div>
+</nav>
