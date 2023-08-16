@@ -11,14 +11,7 @@ import pyrebase
 app = Flask(__name__)
 
 config = {
-    "apiKey": "AIzaSyAt7sRzn7frmPo87XDtrQG7gyZl15n8mgM",
-    "authDomain": "quirk-97f23.firebaseapp.com",
-    "databaseURL": "https://quirk-97f23-default-rtdb.firebaseio.com",
-    "projectId": "quirk-97f23",
-    "storageBucket": "quirk-97f23.appspot.com",
-    "messagingSenderId": "1086535450789",
-    "appId": "1:1086535450789:web:f6f73a129db0392db6cd4c",
-    "measurementId": "G-2SBG5ZHWW8"
+    
 }
 
 fb = pyrebase.initialize_app(config)
